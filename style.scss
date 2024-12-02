@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(
+    120,
+    13,
+    80
+  ); //0 até 255, 1º valor vermelho, 2º valor verde, 3º valor azul
+  background-color: rgb(131, 111, 255);
+  background-color: rgba(
+    131,
+    111,
+    255,
+    0.3
+  ); //alpha, trabalha com opacidade. Vai de 0.1 até 0.9
+  border: solid;
+}
+
+//-- TAMANHOS DAS TELAS
+// WATCH RELÓGIO  - MAX-WIDTH: 200PX
+// MOBILE - MIN-WIDTH: 201PX AND MAX-WIDTH: 500PX
+// TABLET - MIN-WIDTH: 501PX AND MAX-WIDTH: 900PX
+//LAPTOP/NOTEBOOK - MIN-WIDTH: 901PX AND MAX-WIDTH: 1500PX
+//DESKTOP - MIN-WIDTH: 1501PX AND MAX-WIDTH: 1800PX
+//WIDE SCREEN DESKTOP - DESKTOP DE TELA AMPLA  - MIN-WIDTH: 1801PX
+
+//WATCH - RELÓGIO
+@media (max-width: 200px) {
+  header {
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+}
+
+//---MOBILE
+@media (min-width: 201px) and (max-width: 500px) {
+  header {
+    background-color: gold;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: red;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
+}
